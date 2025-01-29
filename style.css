@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-size: max(1660px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+/* adding a box on the top of the main div which give some shadow efffect*/
+.main .box {
+    width: 100%;
+    height: 70vh;
+    opacity: 0.5;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+/* nav bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    height: 80px;
+    margin: auto;
+}
+
+nav img {
+    color: red;
+    position: relative;
+    z-index: 1;
+    height: 40px;
+}
+
+nav div {
+    display: flex;
+    gap: 8px;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+
+}
+
+select {
+    position: relative;
+    z-index: 1;
+    height: 32px;
+    padding: 0 2.25rem;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border-radius: calc(0.1875rem);
+}
+
+
+/* it is the content/text inside the main div*/
+.text {
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    gap: 21px;
+    padding: 0px 25px;
+}
+
+.text> :nth-child(1) {
+    text-align: center;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.text> :nth-child(2) {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text> :nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.text> :nth-child(4) {
+    width: 100%;
+    text-align: center;
+}
+
+/* for gray line I use this separtion */
+.separation {
+    height: 7px;
+    background-color: #2d2d2d;
+    position: relative;
+    z-index: 30;
+}
+
+/* here I write some css for all button */
+.btn {
+    padding: 0.25rem 1rem;
+    font-weight: 800;
+    border: none;
+    border-radius: calc(0.1875rem);
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+
+/* It is the sign in button present in the nav */
+.btn-red-sn {
+    line-height: 14px;
+    height: 32px;
+    font-weight: 600;
+}
+
+
+.ready-btn {
+    height: 48px;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.email {
+    height: 44px;
+    width: max(30%, calc(319px - 3rem));
+    padding: 0 1.5rem;
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* this part for sections */
+.section-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+
+.secImg img {
+    width: 576px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: px;
+    right: 20px;
+}
+
+.section-card>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.section-card>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.section-card>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* this part for FAQ*/
+.faq {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 10px
+}
+
+.faq h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 30px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    max-height: 90px;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #414141;
+}
+
+.login2 {
+    text-align: center;
+    margin-top: 50px;
+    width: 100vw;
+    padding: 30px 0;
+}
+
+.login2 div {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login2 input {
+    margin-right: 10px;
+    ;
+}
+
+
+/* this part for footer */
+footer {
+    color: white;
+}
+
+.footer {
+    width: 60vw;
+    margin: auto;
+}
+
+.footer ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    font-size: 14px;
+}
+
+.footer div {
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+.footer ul li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer select {
+    margin: 80px 0px 50px 0px;
+}
+
+
+.end-button {
+    text-align: center;
+    width: calc(100% - 48px);
+    padding: 24px;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* this is end button only visible to small devices which have screen-size less-than 575px*/
+.end-button button {
+    width: 100%;
+    background-color: red;
+    font-weight: 800;
+    color: white;
+    border: none;
+    border-radius: calc(0.1875rem);
+    cursor: pointer;
+    height: 40px;
+    opacity: 0;
+}
+
+
+/* SOME MEDIA QUERY FOR THE DEVICE HAVING DISPLAY_SIZE < 1250px */
+@media screen and (max-width: 1250px) {
+    .section-card {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .text> :nth-child(1) {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .ready-btn {
+        line-height: 18px;
+    }
+
+    .section-card>div :nth-child(1) {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .section-card>div :nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    .footer ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+
+/* SOME MEDIA QUERY FOR THE DEVICE HAVING DISPLAY_SIZE < 575px */
+@media screen and (max-width:575px) {
+    .text {
+        gap: 12px;
+    }
+
+    .text> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    nav img {
+        height: 24px;
+    }
+
+    nav select {
+        width: 70px;
+        padding-left: 1px;
+        padding-right: 0px;
+    }
+
+    .secImg img {
+        width: 375px;
+    }
+
+    .secImg video {
+        top: 71px;
+        right: 54px;
+        width: 285px;
+    }
+
+    .section-card>div :nth-child(1) {
+        font-size: 30px;
+    }
+
+    .section-card>div :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .login2 {
+        margin-top: 0px;
+    }
+
+    .footer {
+        width: 90vw;
+    }
+
+    .footer ul {
+        grid-template-columns: 1fr;
+    }
+
+    .footer select {
+        margin: 50px 0px 20px 0px;
+    }
+
+    .end-button button {
+        opacity: 1;
+    }
+}
